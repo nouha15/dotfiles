@@ -1,5 +1,5 @@
 -- local Path = vim.fn.stdpath("data")
-local Path = vim.fn.expand("$HOME") .. "/projects/theme-ayu/boda.nvim/"
+local Path = vim.fn.expand("$HOME") .. "/projects/boda.nvim/"
 
 if vim.fn.isdirectory(Path) == 1 then
   -- Boda local for develop

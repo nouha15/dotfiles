@@ -31,7 +31,8 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term foot
-# set $term wezterm
+set $term_kitty kitty
+set $wezterm wezterm
 # Your preferred application launcher
 # set $menu wmenu-run
 set $menu wofi
@@ -122,6 +123,7 @@ bindsym $mod+Shift+x mode "system"
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod+Shift+Return exec $term_kitty
 
     # Kill focused window
     bindsym $mod+Shift+q kill

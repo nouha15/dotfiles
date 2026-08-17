@@ -1,6 +1,7 @@
 --vim.opt.runtimepath:prepend(os.getenv("HOME") .. "/neovim-0.12/neovim/runtime")
-require("lsp")
+require("lsp.init")
 require("autocmd")
 require("config")
+require("colorscheme")
 require("keymap")
 require("plugins")
