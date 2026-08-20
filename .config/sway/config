@@ -108,10 +108,16 @@ bindsym $mod+Shift+x mode "system"
 #       middle_emulation enabled
 #   }
 #
+#
+# xkb_options grp:alt_space_toggle	# Alt+Space                                                                   │
+# xkb_options grp:win_space_toggle	# Win+Space
+  
   input type:keyboard {
       # xkb_layout "eu"
       xkb_layout us,ru
-	  xkb_options grp:alt_shift_toggle
+	  # xkb_options grp:alt_shift_toggle
+	  xkb_options grp:alt_space_toggle
+	  # xkb_options grp:win_space_toggle
   }
 #
 # You can also configure each device individually.
