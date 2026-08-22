@@ -59,5 +59,15 @@
     ]
    ]
   }
- }
+ },
+ {
+  "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
+  "bindings": {
+   "alt-k": "editor::MoveLineUp",
+   "[ e": "editor::MoveLineUp",
+   "alt-j": "editor::MoveLineDown",
+   "] e": "editor::MoveLineDown",
+  }
+ },
+
 ]
