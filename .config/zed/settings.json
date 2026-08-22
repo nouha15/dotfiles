@@ -7,9 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cli_default_open_behavior": "existing_window",
   "terminal": {
     "env": {
-      "SOBOLE_THEME_MODE": "\"dark\""
+      // "SOBOLE_THEME_MODE": "\"dark\""
     },
     "shell": {
       "program": "zsh"
@@ -65,7 +66,7 @@
     // "monospace"
   ],
   "buffer_font_family": "Fira Code",
-  "buffer_font_size": 23.0,
+  "buffer_font_size": 19.0,
   "colorize_brackets": true,
   "show_whitespaces": "selection",
   "wrap_guides": [
@@ -74,14 +75,18 @@
   "preferred_line_length": 80,
   "soft_wrap": "editor_width",
   "hard_tabs": true,
-  "icon_theme":  "Zed (Default)",
+  "icon_theme":  {
+    "mode": "light",
+    "light": "VSCode Icons for Zed (Dark)",
+    "dark": "VSCode Icons for Zed (Dark)"
+  },
   "vim_mode": true,
   "base_keymap": "VSCode",
   "ui_font_size": 19,
   "theme": {
     "mode": "dark",
     "light": "Ayu Light",
-    "dark": "Ayu Dark"
+    "dark": "Pustota"
   },
 "languages": {
 	"C": {
