@@ -30,10 +30,16 @@
 		"show_close_button": "hidden",
 		"git_status": true,
 	},
+	"diagnostics": {
+		"inline": {
+			"enabled": false,
+		},
+	},
 	"edit_predictions": {
 		"disabled_globs": [".env", "*.lock", "package-lock.json"],
 	},
 	"current_line_highlight": "gutter", // "all", "none"
+	"relative_line_numbers": "wrapped", // enabled, disabled
 	"sticky_scroll": {
 		"enabled": false,
 	},
@@ -71,6 +77,8 @@
 	},
 	"buffer_font_family": "Fira Code",
 	"buffer_font_size": 19.0,
+	"buffer_line_height": {"custom": 1.4},
+	"buffer_font_weight": 300,
 	"ui_font_family": ".SystemUIFont",
 	"ui_font_size": 19,
 	"colorize_brackets": true,
@@ -81,7 +89,7 @@
 	"hard_tabs": true,
 	"vim_mode": true,
 	"base_keymap": "VSCode",
-	"code_lens": "on",
+	"code_lens": "off",
 	"git": {
 		"inline_blame": {
 			"enabled": false,
@@ -94,15 +102,30 @@
 		},
 		"JavaScript": {
 			"format_on_save": "on",
-			// "formatter": {
-			// 	"external": {
-			// 		"command": "prettier",
-			// 		"arguments": ["--stdin-filepath", "{buffer_path}"],
-			// 	},
-			// },
+			"formatter": {
+				"external": {
+					"command": "node_modules/.bin/prettier",
+					"arguments": ["--stdin-filepath", "{buffer_path}"],
+				},
+			},
 		},
 		"TypeScript": {
 			"format_on_save": "on",
+			"formatter": {
+				"external": {
+					"command": "node_modules/.bin/prettier",
+					"arguments": ["--stdin-filepath", "{buffer_path}"],
+				},
+			},
+		},
+		"TSX": {
+			"format_on_save": "on",
+			"formatter": {
+				"external": {
+					"command": "node_modules/.bin/prettier",
+					"arguments": ["--stdin-filepath", "{buffer_path}"],
+				},
+			},
 		},
 		"JSON": {
 			"format_on_save": "on",
